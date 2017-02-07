@@ -1,0 +1,7 @@
+package calculadoras;
+
+public interface Pila<E>{
+	public boolean isEmpty();
+	public void push(E digit);
+	public E pop();
+}

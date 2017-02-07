@@ -1,0 +1,60 @@
+/**
+ * 
+ */
+package calculadoras;
+
+/**
+ * @author Emilio Diaz
+ * @author Daniel Rodriguez
+ */
+import java.util.ArrayList;
+
+public class Main implements calculadora, Pila{
+
+	private String expresion; 
+	private ArrayList operacion;
+
+	
+	public Main(){
+
+	}
+
+	public Object pop() {
+
+	
+		return null;
+	}
+
+
+	public boolean isEmpty() {
+
+		return false;
+	}
+
+	public int suma(int x, int y) {
+
+		return x + y;
+	}
+
+	public int resta(int x, int y) {
+
+		return x - y;
+	}
+
+	public int multiplicacion(int x, int y) {
+
+		return x * y;
+	}
+
+
+	public int division(int x, int y) {
+
+		return x / y;
+	}
+
+	public void push(Object digit) {
+	}
+
+
+
+}
