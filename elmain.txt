@@ -1,0 +1,126 @@
+import java.util.ArrayList;
+
+
+
+
+
+public class Main <E> implements iCalculadora, iPila{
+
+	private String expresion;
+	private ArrayList operacion;
+	public Main(String expresion){
+
+	this.expresion = expresion;	
+	}
+
+	
+
+	public int evaluar(){
+
+		operacion = new ArrayList();
+
+		
+			}
+
+			case '-':{
+
+				int x = (int) pop();
+
+				int y = (int) pop();
+
+				int resultado = resta(x, y);
+
+				push(resultado);
+
+				break;
+
+			}
+
+			case '*':{
+
+				int x = (int) pop();
+
+				int y = (int) pop();
+
+				int resultado = multiplicacion(x, y);
+
+				push(resultado);
+
+				break;
+
+			}
+
+			case '/':{
+
+				int x = (int) pop();
+
+				int y = (int) pop();
+
+				int resultado = division(x, y);
+
+				push(resultado);
+
+				break;
+
+			}
+
+			
+
+		}
+
+		return (int) pop();
+
+	}
+
+	public E pop() {
+
+		return (E) operacion.remove(0);
+	}
+
+	public boolean isEmpty() {
+
+		return false;
+
+	}
+
+	
+	public int suma(int x, int y) {
+		return x + y;
+	}
+
+
+	public int resta(int a, int b) {
+
+		return x - y;
+
+	}
+
+
+	public int multiplicacion(int x, int y) {
+		return x * y;
+
+
+
+	}
+
+
+	public int division(int x, int y) {
+		return x / y;
+
+
+
+	}
+
+	public void push(Object algo) {
+
+		 operacion.add(algo);
+
+	}
+
+
+
+
+
+
+
+}
